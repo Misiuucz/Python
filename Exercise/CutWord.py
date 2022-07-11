@@ -1,15 +1,18 @@
-# First input is a count of words
-# Every next input will be a word from the list
+# The first input asks for number of words
+# Every next input should be a word which contains only letters
+# Output will give us word back, but if it contains at least 2 same letters in a row, it will return letter and it's count
 
-# Example input:
+# For example:
+# Input:
 # 3
-# AAEEEOOO
-# AEO
-# ELOOO
+# word
+# wooordddd
+# hooolooogram
+
 # Output:
-# A2E3O3
-# AEO
-# ELO3
+# word
+# wo3rd4
+# ho3lo3gram
 
 def cutWord (word):
     
@@ -36,7 +39,7 @@ def cutWord (word):
     return str(newString)
 
 
-a = input('Podaj liczbe słów: ')
+a = input('How many words? - ')
 a = int(a)
 
 StringArray = []
